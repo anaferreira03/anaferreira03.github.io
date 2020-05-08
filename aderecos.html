@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Histórias...">
+    <meta name="author" content="Ana Ferreira">
+
+    <title>Histórias...</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="css/loader.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- Static navbar -->
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="historias.html">Histórias</a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="historias.html">Inicio</a></li>
+              <li><a href="local.html">Local</a></li>
+              <li><a href="heroi.html">Herói</a></li>
+              <li><a href="vilao.html">Vilão</a></li>
+              <li><a href="outras-personagens.html">Outras Personagens</a></li>
+              <li class="active"><a href="aderecos.html">Adereços</a></li>
+              <li><a href="final.html">Final</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Main component for random draws -->
+      <div class="page-header">
+        <h3>Clica em <span class="text-success">Sortear</span> para escolher uma opção!</h3>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title text-center">Adereços</h3>
+            </div>
+            <div class="panel-body">
+              <button type="button" class="btn btn-lg btn-success btn-block" id="draw">Sortear...</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 text-center">
+          <div id="placeholder"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+
+    <!-- Custom RNG -->
+    <script src="js/rng.js"></script>
+    <script>
+      $('#draw').click(function() {
+        rng("aderecos");
+      })
+    </script>
+  </body>
+</html>
