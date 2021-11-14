@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Robot 🤖">
+    <meta name="author" content="Ana Ferreira">
+
+    <title>Robot 🤖</title>
+    <link rel="stylesheet" href="css/robot.css">
+</head>
+
+<body>
+<div>
+    <div>Cenários:</div>
+    <div class="horizontalSpace"></div>
+    <div class="buttonBlocksScenarios">
+        <button class="buttonScenarios" onclick="scenario(1)">1</button>
+        <button class="buttonScenarios" onclick="scenario(2)">2</button>
+        <button class="buttonScenarios" onclick="scenario(3)">3</button>
+        <button class="buttonScenarios" onclick="scenario(4)">4</button>
+        <button class="buttonScenarios" onclick="scenario(5)">5</button>
+        <button class="buttonScenarios" onclick="scenario(6)">6</button>
+        <button class="buttonScenarios" onclick="scenario(7)">7</button>
+        <button class="buttonScenarios" onclick="scenario(8)">8</button>
+        <button class="buttonScenarios" onclick="scenario(9)">9</button>
+        <button class="buttonScenarios" onclick="scenario(10)">10</button>
+        <button class="buttonScenarios" onclick="scenario(11)">11</button>
+        <button class="buttonScenarios" onclick="scenario(12)">12</button>
+        <button class="buttonScenarios" onclick="scenario(13)">13</button>
+        <button class="buttonScenarios" onclick="scenario(14)">14</button>
+        <button class="buttonScenarios" onclick="scenario(15)">15</button>
+    </div>
+</div>
+
+<div class="horizontalSpace"></div>
+
+<div class="blocks">
+    <div>Mapa:</div>
+    <div class="horizontalSpace"></div>
+    <div class="board">
+        <div class="tile" id="00"></div>
+        <div class="tile" id="01"></div>
+        <div class="tile" id="02"></div>
+        <div class="tile" id="03"></div>
+        <div class="tile" id="04"></div>
+        <div class="tile" id="05"></div>
+        <div class="tile" id="06"></div>
+        <div class="tile" id="07"></div>
+        <div class="tile" id="08"></div>
+        <div class="tile" id="10"></div>
+        <div class="tile" id="11"></div>
+        <div class="tile" id="12"></div>
+        <div class="tile" id="13"></div>
+        <div class="tile" id="14"></div>
+        <div class="tile" id="15"></div>
+        <div class="tile" id="16"></div>
+        <div class="tile" id="17"></div>
+        <div class="tile" id="18"></div>
+        <div class="tile" id="20"></div>
+        <div class="tile" id="21"></div>
+        <div class="tile" id="22"></div>
+        <div class="tile" id="23"></div>
+        <div class="tile" id="24"></div>
+        <div class="tile" id="25"></div>
+        <div class="tile" id="26"></div>
+        <div class="tile" id="27"></div>
+        <div class="tile" id="28"></div>
+        <div class="tile" id="30"></div>
+        <div class="tile" id="31"></div>
+        <div class="tile" id="32"></div>
+        <div class="tile" id="33"></div>
+        <div class="tile" id="34"></div>
+        <div class="tile" id="35"></div>
+        <div class="tile" id="36"></div>
+        <div class="tile" id="37"></div>
+        <div class="tile" id="38"></div>
+        <div class="tile" id="40"></div>
+        <div class="tile" id="41"></div>
+        <div class="tile" id="42"></div>
+        <div class="tile" id="43"></div>
+        <div class="tile" id="44"></div>
+        <div class="tile" id="45"></div>
+        <div class="tile" id="46"></div>
+        <div class="tile" id="47"></div>
+        <div class="tile" id="48"></div>
+        <div class="tile" id="50"></div>
+        <div class="tile" id="51"></div>
+        <div class="tile" id="52"></div>
+        <div class="tile" id="53"></div>
+        <div class="tile" id="54"></div>
+        <div class="tile" id="55"></div>
+        <div class="tile" id="56"></div>
+        <div class="tile" id="57"></div>
+        <div class="tile" id="58"></div>
+        <div class="tile" id="60"></div>
+        <div class="tile" id="61"></div>
+        <div class="tile" id="62"></div>
+        <div class="tile" id="63"></div>
+        <div class="tile" id="64"></div>
+        <div class="tile" id="65"></div>
+        <div class="tile" id="66"></div>
+        <div class="tile" id="67"></div>
+        <div class="tile" id="68"></div>
+        <div class="tile" id="70"></div>
+        <div class="tile" id="71"></div>
+        <div class="tile" id="72"></div>
+        <div class="tile" id="73"></div>
+        <div class="tile" id="74"></div>
+        <div class="tile" id="75"></div>
+        <div class="tile" id="76"></div>
+        <div class="tile" id="77"></div>
+        <div class="tile" id="78"></div>
+    </div>
+</div>
+
+<div class="blocks">
+    <div class="blocksScenarioNone" id="scenarios">
+        <div id="scenario"></div>
+    </div>
+
+    <div class="horizontalSpace"></div>
+
+    <div class="blocksControls" id="controls">
+        <div>Move o Robot:</div>
+        <hr>
+        <div class="blocks">
+            <img class="control" src="images/robot/left.png" onclick="process('left')">
+        </div>
+        <div class="blocks">
+            <img class="control" src="images/robot/fwd.png" onclick="process('fwd')">
+        </div>
+        <div class="blocks">
+            <img class="control" src="images/robot/right.png" onclick="process('right')">
+        </div>
+        <div class="buttonBlocks">
+            <button class="button" onclick="reload()">Recomeçar</button>
+        </div>
+    </div>
+</div>
+
+<script src="js/robot.js"></script>
+<script>render()</script>
+</body>
+</html>

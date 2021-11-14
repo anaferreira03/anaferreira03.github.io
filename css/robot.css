@@ -1,0 +1,131 @@
+.board {
+    width: 790px;
+    height: 480px;
+}
+
+.tile {
+    float: left;
+    width: 80px;
+    height: 80px;
+    background-color: #eee;
+    border: 1px solid darkgrey;
+}
+
+.tilePath {
+    float: left;
+    width: 80px;
+    height: 80px;
+    background-color: darkred;
+    border: 1px solid darkgrey;
+}
+
+.tileImage {
+    float: left;
+    width: 80px;
+    height: 80px;
+}
+
+.blocks {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.blocksBottom {
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.blocksScenarioNone {
+    display: none;
+    vertical-align: top;
+}
+
+.blocksScenarioActive {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.blocksScenarioActive li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.blocksControls {
+    display: block;
+    vertical-align: bottom;
+}
+
+.blocks {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.buttonBlocks {
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.control {
+    cursor: pointer;
+    border: 1px solid darkgrey;
+    width: 80px;
+    height: 80px;
+}
+
+.rotateimg180 {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.rotateimg90 {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.rotateimg270 {
+    -webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    transform: rotate(270deg);
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.buttonScenarios {
+    display: inline-block;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.horizontalSpace {
+    height: 10px;
+}
+
+body {
+    font-size: larger;
+    font-family: Helvetica,Arial, sans-serif;
+}
